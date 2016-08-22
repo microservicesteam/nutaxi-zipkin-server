@@ -228,8 +228,6 @@ export MAVEN_CMD_LINE_ARGS
 
 WRAPPER_LAUNCHER=org.apache.maven.wrapper.MavenWrapperMain
 
-echo "maven base dir: $MAVEN_PROJECTBASEDIR"
-
 # avoid using MAVEN_CMD_LINE_ARGS below since that would loose parameter escaping in $@
 exec "$JAVACMD" \
   $MAVEN_OPTS \
