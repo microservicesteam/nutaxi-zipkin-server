@@ -13,12 +13,12 @@ public class EmbeddedKafkaServer {
 
     public EmbeddedKafkaServer(Properties kafkaProperties, Properties zkProperties) {
         zookeeper = new EmbeddedZooKeeperServer(zkProperties);
-        wait5Sec();
+        sleep();
         kafka = new KafkaServerStartable(new KafkaConfig(kafkaProperties));
         kafka.startup();
     }
 
-    private void wait5Sec() {
+    private void sleep() {
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
